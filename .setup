@@ -1,0 +1,21 @@
+# If Homebrew is not installed
+if ! which brew > /dev/null; then
+     # Install Homebrew
+     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi;
+
+# Initialize Apache
+# sudo apachectl start
+
+# Symlink important files
+# git clone https://github.com/kodewilliams/dotfiles ~/dotfiles
+# ln -sf ~/dotfiles/* ~
+
+# Clean up Homebrew
+# brew update; brew upgrade; brew cleanup --prune-prefix; brew doctor
+
+# Install packages and applications
+# brew bundle install
+
+# Install Ruby dependencies
+# gem install bundler

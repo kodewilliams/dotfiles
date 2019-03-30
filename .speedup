@@ -1,0 +1,14 @@
+# Mac OS Improvements
+
+defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.dock expose-animation-duration -float 0.05
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write -g QLPanelAnimationDuration -float 0
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+defaults write NSGlobalDomain KeyRepeat -int 4
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
