@@ -17,7 +17,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/cocopon/vaffle.vim.git'
 Plug 'mileszs/ack.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 
 call plug#end()
@@ -56,9 +55,6 @@ let g:airline#extensions#tabline#enabled=1
 let g:goyo_width='90%'
 let g:goyo_height='90%'
 let g:goyo_linenr=1
-
-" Use deoplete.
-let g:deoplete#enable_at_startup=1
 
 " Clean up netrw and enhance
 let g:netrw_banner=0

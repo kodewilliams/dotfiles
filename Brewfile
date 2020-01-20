@@ -15,6 +15,8 @@ brew 'python3'
 brew 'pipenv'
 brew 'wget'
 brew 'ruby'
+brew 'neovim'
+brew 'ack'
 
 # Install applications for development
 cask 'iterm2'
