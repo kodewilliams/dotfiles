@@ -12,11 +12,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dikiaap/minimalist'
 
 " Functionalities
-Plug 'https://github.com/tpope/vim-vinegar.git'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'https://github.com/cocopon/vaffle.vim.git'
-Plug 'mileszs/ack.vim'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 
 call plug#end()
@@ -31,14 +26,6 @@ set number
 set noshowmode
 set mouse=a
 set autowrite
-
-" Keyboard Remappings
-nnoremap <Leader>w <C-w>w
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>l <C-w>l
-nnoremap <Leader>q <C-w>q
 
 " Restore settings
 filetype plugin indent on
@@ -64,8 +51,3 @@ let g:netrw_browse_split=4
 let g:netrw_altv=1
 
 " Fix fast typing problem
-command WQ wq
-command Wq wq
-command W w
-command Q q
-command Sidebar 20% Vex 

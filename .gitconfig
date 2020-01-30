@@ -1,7 +1,7 @@
 # General settings for Git
 [user]
-    name = Kode Williams
-    email = kode.a.williams@gmail.com
+	name = Kode Williams
+	email = kode.a.williams@gmail.com
 [github]
     user = kodewilliams
 [color]
