@@ -1,26 +1,17 @@
-# Symlink important files
-# git clone https://github.com/kodewilliams/dotfiles ~/dotfiles
-# ln -svf /Users/kodewilliams/dotfiles/.* /Users/kodewilliams &
-
 # If Homebrew is not installed
 if ! which brew > /dev/null; then
   # Install Homebrew
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi;
 
+# Symlink dotfiles
+cd $HOME
+# git clone https://github.com/kodewilliams/dotfiles ~/dotfiles
+ln -s $HOME/dotfiles/.* . > /dev/null 2>&1
+rm -rf $HOME/.{git,gitignore} > /dev/null 2>&1
+
 # Update Homebrew
-# brew update &
+brew update > /dev/null 2>&1
 
 # Update packages
-# brew upgrade &
-
-# Install Ruby dependencies
-# gem install bundler &
-
-# Setup NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# Silence zsh warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
+brew upgrade > /dev/null 2>&1
