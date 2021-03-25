@@ -1,3 +1,3 @@
-alias dev='cd $HOME/Code'
+alias dev='cd $HOME/Dev'
 alias l='ls -l'
 alias ll='ls -la'
