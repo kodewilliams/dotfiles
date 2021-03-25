@@ -3,3 +3,5 @@
 	email = kode.a.williams@gmail.com
 [color]
 	ui = true
+[pull]
+	rebase = true
